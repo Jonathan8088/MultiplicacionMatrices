@@ -10,6 +10,7 @@ import java.util.Scanner;
 /**
  *
  * @author Jonathan
+ * @version 1.0.3
  */
 public class MultiplicacionMatrices {
     public int matriz1[][],matriz2[][],filas1,columnas1,filas2,columnas2,datos;
@@ -21,10 +22,11 @@ public class MultiplicacionMatrices {
         filas1 = referencia.nextInt();
         System.out.println("Ingrese cantidad de columnas: ");
         columnas1 = referencia.nextInt();
+        int matriz1[][] = new int[filas1][columnas1];
         
         for(int i=0;i<filas1;i++){
             for(int j=0;j<columnas1;j++){
-                System.out.println("ingrese el dato de la fila "+i+" columna "+j);
+                System.out.println("ingrese el dato de la fila "+(i+1)+" columna "+(j+1));
                 datos=numeros.nextInt();
                 matriz1[i][j]=datos;
             }//forj
@@ -34,10 +36,11 @@ public class MultiplicacionMatrices {
         filas2 = referencia.nextInt();
         System.out.println("Ingrese cantidad de columnas: ");
         columnas2 = referencia.nextInt();
+        int matriz2[][] = new int[filas2][columnas2];
         
         for(int i=0;i<filas2;i++){
             for(int j=0;j<columnas2;j++){
-                System.out.println("ingrese el dato de la fila "+i+" columna "+j);
+                System.out.println("ingrese el dato de la fila "+(i+1)+" columna "+(j+1));
                 datos = referencia.nextInt();
                 matriz2[i][j]=datos;
             }//forj
